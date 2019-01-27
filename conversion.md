@@ -13,6 +13,12 @@ This writing aims to explain how to start a conversion from monolithic to micros
 
 All of the contents below are limitted my experiences and understanding. Any comments are appreciated.
 
+|Area|Monolithic|Microservices|
+|--|--|--|
+|Programming Language|Only one programming language can be selected in most cases|Almost no limit to the choice of programming language|
+|Deployment|Depends on the installation exe to install all of libraries in the desktop/server||
+
+
 ### What does monolithic system look like
 I started my career in 2002. The first system is `Hospital Information System` written in `Powerbuilder 7.2`. I didn't know it was a monolithic system at that moment. 
 
