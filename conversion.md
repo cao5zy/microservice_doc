@@ -16,7 +16,8 @@ All of the contents below are limitted my experiences and understanding. Any com
 |Area|Monolithic|Microservices|
 |--|--|--|
 |Programming Language|Only one programming language can be selected in most cases|Almost no limit to the choice of programming language|
-|Deployment|Depends on the installation exe to install all of libraries in the desktop/server||
+|Deployment|All libraries are delivered by installation program in the desktop/server. The installation program could be professional `InstallShield` or a simple copy command.|Microservices are deployed in containers over cloud. Docker, ansible, linux, kubernetes and cloud are only the tip of the iceberg.|
+
 
 
 ### What does monolithic system look like
