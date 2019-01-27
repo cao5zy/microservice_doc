@@ -15,7 +15,7 @@ All of the contents below are limitted my experiences and understanding. Any com
 
 |Area|Monolithic|Microservices|
 |--|--|--|
-|Programming Language|Only one programming language can be selected in most cases|Almost no limit to the choice of programming language|
+|Programming Language|Only one programming language can be selected. It also means the developers in the team should only master one programming language. |Almost no limit to the choice of programming language. It says we can leverage the capabilities of programming languages for different business domains. But it also requires the team members master the programming languages.|
 |Deployment|All libraries are delivered by installation program in the desktop/server. The installation program could be professional `InstallShield` or a simple copy command.|Microservices are deployed in containers over cloud. Docker, ansible, linux, kubernetes and cloud are only the tip of the iceberg.|
 
 
