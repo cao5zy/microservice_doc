@@ -11,13 +11,17 @@
 ### Introduction
 This writing aims to explain how to start a conversion from monolithic to microservices. I will explain monolithic and microservices first, and then figure out the gap between the two styles. Finally, I will list some steps to fill the gaps to achieve the conversion.
 
-All of the contents below are limitted my experiences and understanding. Any comments are appreciated.
+Before start a conversion, I will try to explain the difference between monolithic system and microservices with following table.
 
 |Area|Monolithic|Microservices|
 |--|--|--|
-|Programming Language|Only one programming language can be selected. It also means the developers in the team should only master one programming language. |Almost no limit to the choice of programming language. It says we can leverage the capabilities of programming languages for different business domains. But it also requires the team members master the programming languages.|
+|Programming Language|Only one programming language can be selected. It also means the developers in the team should only master one programming language. |Almost no limit to the choice of programming language. It says we can leverage the capabilities of programming languages for different business domains. |
 |Deployment|All libraries are delivered by installation program in the desktop/server. The installation program could be professional `InstallShield` or a simple copy command.|Microservices are deployed in containers over cloud. Docker, ansible, linux, kubernetes and cloud are only the tip of the iceberg.|
-
+|Communications (Technical)|Communications between components in monithic system are almost in threads. It even doesn't need to be managed|Communications between microservices are almost over network. So VPN, authentication of access, aggregation of access should be concerned.|
+|Database Design|In most cases, only one database is needed for the monolithic system.|In most cases, one database per microservice.
+|Troubleshooting|In most cases, only one log file is required for the monolithic system. The troubleshooting can be done on that log file.|Because each microservice has its log file, the troubleshooting would require multiple log files from multiple microservices. However, this awkward situation has been addressed by the `centralized logging`, such as logstash, flume and so on.|
+|Configurations Management|In most case, only several configuration files are for the monolithic system. Settings for the system can be easily controlled over that several configuration files.|At least one configuration file per microservice. Controlling the behavior of the microservices system would involve quite a few configuration files.|
+|Monitoring|The monolithic system, in most cases, is deployed as a single executable. It is easy to monitor, for example, it can be described as up/down.|The system of microservices is comprised of quite a few of indenpendent processes. It become hard to monitor. For example, one failure of the system would be caused by one or two microservices which should be quickly identified. So the other tools for monitoring microservices, such as `Prometheus` should be applied.|  
 
 
 ### What does monolithic system look like
