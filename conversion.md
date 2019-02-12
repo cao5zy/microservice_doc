@@ -19,7 +19,9 @@ Actually, this is a long journey to convert a monolithic system to microservices
 1. Get the approval and support from the head
 2. Build the DevOps culture
 3. Equip with the knowledge and experiences on cloud, container, ansible, logstash, prometheus, kubernetes and domain driven design.
-4. Make a detailed plan for implementation and go step by step.
+4. Make sure you have a updated blueprint of your system which can help you identify the module/component that could be converted to microservice.
+5. Make sure you have a updated blueprint of your database which can help you identify the table/entity that could be moved to a standalone database for the microservice.
+6. Refactor the module/component to meet the principle of `high cohesion & low coupling`.
 
 ## Conclusion
 It is found that the conversion from monolithic system to microservices system is not easy. Kinds of knowledge and experiences are required. However, microservices are driven by business. No matter how hard it would be, any solutions that can respond to the rapid changes in business should be adopted. 
