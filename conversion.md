@@ -14,8 +14,8 @@ Before starting a conversion from monolithic system to microservices system, let
 |Configurations Management|In most case, only several configuration files are for the monolithic system. Settings for the system can be easily controlled over that several configuration files.|At least one configuration file per microservice. Controlling the behavior of the microservices system would involve quite a few configuration files. So the tools, such as ansible, is required for provisioning with managed configuration.|
 |Monitoring|The monolithic system, in most cases, is deployed as a single executable. It is easy to monitor, for example, it can be described as up/down.|The system of microservices is comprised of quite a few of independent processes. It become hard to monitor. For example, one failure of the system would be caused by one or two microservices which should be quickly identified. So the other tools for monitoring microservices, such as `Prometheus` should be applied.|  
 
-## The steps for conversion
-Actually, this is a long journey to convert a monolithic system to microservices system. Although there are quite a few particularities to cases, there are generally following steps for your reference.
+## The start for conversion
+Actually, this is a long journey to convert a monolithic system to microservices system. Although there are quite a few particularities to individual cases, there are generally following points for your reference to start conversion.
 1. Get the approval and support from the head
 2. Build the DevOps culture
 3. Equip with the knowledge and experiences on cloud, container, ansible, logstash, prometheus, kubernetes and domain driven design.
